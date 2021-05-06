@@ -12,6 +12,7 @@ variableGroups:
   - region
   - instance_os
   - linux_os_version
+  - label_prefix
 
 - title: Jenkins Configuration
   visible: true  
@@ -140,7 +141,7 @@ variables:
       regionName: ${region}
       compartmentId: ${compartment_ocid}
 
-  node_shape:
+  instance_shape:
     type: oci:core:instanceshape:name
     required: false
     visible: 
